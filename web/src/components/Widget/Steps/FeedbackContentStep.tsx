@@ -7,16 +7,21 @@ import { FeedbackType, feedbackTypes } from "../WidgetForm/WidgetForm";
 interface FeedbackContentStepProps {
    feedbackType: FeedbackType;
    onFeedbackRestartRequested: () => void;
+   onFeedbackSent: () => void;
 }
 
-export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequested }: FeedbackContentStepProps) {
+export function FeedbackContentStep({ 
+   feedbackType, 
+   onFeedbackRestartRequested, 
+   onFeedbackSent 
+}: FeedbackContentStepProps) {
    const feedbackTypeInfo = feedbackTypes[feedbackType];
    const [screenshot, setScreenshot] = useState<string | null>(null);
    const [comment, setComment] = useState("");
 
    function handleSubmitFeedback(event: FormEvent) {
       event.preventDefault();
-      console.log({screenshot, comment});
+      onFeedbackSent();
    }
 
    return (
@@ -50,7 +55,8 @@ export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequested }
                />
                <button
                   type="submit"
-                  className="p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus-brand-ring-2 transition-colors"
+                  className="p-2 bg-brand-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm hover:bg-brand-300 focus-brand-ring-2 transition-colors disabled:opacity-50 disabled:hover:bg-brand-500"
+                  disabled={comment.length === 0}
                >
                   Enviar Feedback
 
