@@ -5,3 +5,11 @@
 body {
    @apply bg-[#09090A] text-zinc-100;
 }
+
+.focus-brand-ring-2 {
+   @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500;
+}
+
+.focus-brand {
+   @apply focus:border-brand-500 focus:ring-brand-500 focus:ring-1 focus:outline-none;
+}
