@@ -14,6 +14,8 @@
 
 "FeedGet" - assim apelidado pela equipe da Rocket Seat - é um projeto aparentemente simples desenvolvido durante a Next Level Week Return da Rocket Seat, mas que foi desenvolvido utilizando tecnologias e práticas de ponta. Dentre os principais diferenciais desse projeto se destacam a preocupação com <b>Acessibilidade</b>, a aplicação dos princípios <b>SOLID</b>, o desenvolvimento do backend utilizando <b>TDD<b/> e a implementação de <b>CI/CD</b>.
 
+<p>Link do deploy projeto desenvolvido: https://nlw-8-diegolf.vercel.app/</p>
+
 ## 🚀 Tecnologias
 
 <table align="center">
@@ -43,6 +45,7 @@
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1102912516166573468/Feedback-Widget). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
+<br/><br/>
 ---
 
 <p align="center">
