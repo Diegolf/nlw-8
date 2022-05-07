@@ -31,10 +31,10 @@
             Phosphor Icons
        </td> 
         <td>
-            Node.js
+            Node.js <br/>
             Typescript <br/>
             Nodemailer <br/>
-            Prisma ORM <br/>            
+            Prisma ORM 
         </td>        
     </tr>
 </table>
